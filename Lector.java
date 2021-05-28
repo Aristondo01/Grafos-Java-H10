@@ -114,15 +114,6 @@ public class Lector
                 paises[posx.get(separar[0])][posx.get(separar[1])]=separar[2];
             }
 
-            for (int i =0;i<tam;i++)
-            {
-                System.out.println("\n");
-                for (int j =0;j<tam;j++)
-                {
-                    System.out.print(paises[i][j]+"\t\t");
-                }
-
-            }
         }
         catch (FileNotFoundException e)
         {
