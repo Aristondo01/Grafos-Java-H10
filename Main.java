@@ -166,8 +166,8 @@ class Main {
                     try
                     {
                         int res = Integer.parseInt(a);
-                        Original[x][y]=res+"";
-                        Matriz[x][y]=res+"";
+                        Original=F.cambio(Original,x,y,res+"");
+                        Matriz=F.cambio(Matriz,x,y,res+"");
                         num=false;
                     }
                     catch (IllegalFormatException e)
@@ -233,8 +233,9 @@ class Main {
                         System.out.println("Opcion invalida");
                     }
                 }
-                Original[x][y]=10000000+"";
-                Matriz[x][y]=10000000+"";
+
+                Original=F.cambio(Original,x,y,10000000+"");
+                Matriz=F.cambio(Matriz,x,y,10000000+"");
 
 
             }

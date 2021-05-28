@@ -97,6 +97,11 @@ public class Floyd {
         return M2;
     }
 
+    public String [][] cambio(String [][] Matriz,int x,int y,String cambio)
+    {
+        Matriz[x][y]=cambio;
+        return  Matriz;
+    }
 
 
 }

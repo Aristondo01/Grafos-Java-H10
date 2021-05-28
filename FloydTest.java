@@ -16,7 +16,7 @@ public class FloydTest {
     //Se ingresara según la posicion
     public void CambiarArco() {
         String [][] Matriz = leer.Leer("guategrafo.txt");
-        Matriz[1][4]="1";
+        Matriz=F.cambio(Matriz,1,4,"1");
         assertEquals("1",Matriz[1][4]);
     }
     //Para que el algoritmo de floyd funcionase correctamente
@@ -25,7 +25,7 @@ public class FloydTest {
     @org.junit.Test
     public void Eliminar() {
         String [][] Matriz = leer.Leer("guategrafo.txt");
-        Matriz[1][4]="100000";
+        Matriz=F.cambio(Matriz,1,4,"100000");
         assertEquals("100000",Matriz[1][4]);
     }
 
